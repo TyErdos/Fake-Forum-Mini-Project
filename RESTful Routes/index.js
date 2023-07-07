@@ -40,6 +40,12 @@ let comments = [
     }
 ]
 
+
+app.get('/', (req,res) =>
+{
+    res.render('home');
+})
+
 app.get('/comments', (req,res) =>
 {
     res.render('comments/index', {comments})
